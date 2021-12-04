@@ -1,8 +1,7 @@
-def puzzle1():
+from utils import *
 
-    with open('data/depth_signals.txt', 'r') as f:
-        signals = [int(depth) for depth in f.readlines()]
 
+def puzzle1(signals):
     count = 0
     for i in range(1, len(signals)):
         if signals[i] > signals[i - 1]:
@@ -11,11 +10,7 @@ def puzzle1():
     print(count)
 
 
-def puzzle2():
-
-    with open('data/depth_signals.txt', 'r') as f:
-        signals = [int(depth) for depth in f.readlines()]
-
+def puzzle2(signals):
     count = 0
     prev_sum = signals[0] + signals[1] + signals[2]
     for i in range(3, len(signals)):
@@ -26,6 +21,7 @@ def puzzle2():
 
     print(count)
 
-        
-puzzle1()
-puzzle2()
+
+data = [int(x) for x in get_raw_line_split(1, 1)]
+puzzle1(data)
+puzzle2(data)
