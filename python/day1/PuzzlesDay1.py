@@ -1,6 +1,3 @@
-from utils import *
-
-
 def puzzle1(signals):
     count = 0
     for i in range(1, len(signals)):
@@ -22,6 +19,8 @@ def puzzle2(signals):
     print(count)
 
 
-data = [int(x) for x in get_raw_line_split(1, 1)]
+with open('data1_1.txt', 'r') as f:
+    data = [int(line.rstrip()) for line in f]
+
 puzzle1(data)
 puzzle2(data)

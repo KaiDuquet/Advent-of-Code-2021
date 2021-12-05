@@ -1,6 +1,3 @@
-from utils import *
-
-
 def puzzle1(numbers):
     num_length = len(numbers[0])
     counts = [0] * num_length
@@ -49,6 +46,8 @@ def puzzle2(numbers):
     print(int('0b' + o2_rating[0], 2) * int('0b' + co2_rating[0], 2))
 
 
-data = get_raw_line_split(3, 1)
+with open('data3_1.txt', 'r') as f:
+    data = [line.rstrip() for line in f]
+
 puzzle1(data)
 puzzle2(data)

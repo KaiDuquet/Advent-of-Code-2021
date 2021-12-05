@@ -1,6 +1,3 @@
-from utils import *
-
-
 def puzzle1(commands):
     vertical = 0
     horizontal = 0
@@ -34,7 +31,9 @@ def puzzle2(commands):
     print(vertical * horizontal)
 
 
-data = get_raw_line_split(1, 1)
+with open('data2_1.txt', 'r') as f:
+    data = [line.rstrip() for line in f]
+
 puzzle1(data)
 puzzle2(data)
 
