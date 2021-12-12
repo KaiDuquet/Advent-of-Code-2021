@@ -12,8 +12,8 @@ Each will be used to solve 5 days of puzzles throughout the month.
 
 *Day 01 - 05* will use **Python**<br>
 *Day 06 - 10* will use **JavaScript**<br>
-*Day 11 - 15* will use **C#**<br>
-*Day 16 - 20* will use **Java**<br>
+*Day 11 - 15* will use **Java**<br>
+*Day 16 - 20* will use **C#**<br>
 *Day 21 - 25* will use **C++**<br>
 
 I am intentionally reserving later, harder puzzles for languages that I would like to be challenged with, for practice.
